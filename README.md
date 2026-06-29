@@ -86,6 +86,31 @@ This automatically opens the dashboard in your default browser at `http://localh
 
 ---
 
+## 🚀 Deployment
+
+You can deploy this dashboard easily using one of the following methods:
+
+### Method 1: Streamlit Community Cloud (Recommended & Free)
+1. Commit and push all your code changes to your GitHub repository.
+2. Go to [Streamlit Community Cloud](https://share.streamlit.io/) and log in using your GitHub account.
+3. Click on the **New app** button.
+4. Select this repository (`CodeAlpha_Unemployment_Analysis_Dashboard`), branch (`main`), and set the main file path to `app.py`.
+5. Click **Deploy!** Your dashboard will be live in a few seconds.
+
+### Method 2: Dockerized Deployment (Render, Railway, AWS, GCP, etc.)
+This repository includes a `Dockerfile` for easy containerization.
+1. Build the Docker image:
+   ```bash
+   docker build -t unemployment-analysis-dashboard .
+   ```
+2. Run the Docker container:
+   ```bash
+   docker run -p 8501:8501 unemployment-analysis-dashboard
+   ```
+3. To deploy to **Render** or **Railway**, simply connect your GitHub repo and select the Docker environment. The platform will automatically detect the `Dockerfile` and run the dashboard.
+
+---
+
 ## 🔒 Data Preprocessing Pipeline & Verification
 
 The dashboard is fully connected to the live datasets. During loading, the raw files are run through a robust cleaning pipeline:
