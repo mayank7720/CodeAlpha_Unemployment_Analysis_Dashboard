@@ -1,6 +1,9 @@
 # Unemployment Analysis Dashboard (India, 2019-2020)
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://codealphaunemploymentanalysisdashboard-czezeaj7vnqq2dmdsacr93.streamlit.app/)
+
 A production-ready, modular Streamlit analytics dashboard designed with premium aesthetics inspired by Power BI, Tableau, and Stripe Analytics. The dashboard offers key insights into labor force dynamics, regional disparities, and the socioeconomic shock of the COVID-19 pandemic.
+
 
 ## 📂 Project Structure
 
@@ -91,11 +94,15 @@ This automatically opens the dashboard in your default browser at `http://localh
 You can deploy this dashboard easily using one of the following methods:
 
 ### Method 1: Streamlit Community Cloud (Recommended & Free)
+The app is live and accessible at: **[Live Dashboard App](https://codealphaunemploymentanalysisdashboard-czezeaj7vnqq2dmdsacr93.streamlit.app/)**
+
+To deploy your own copy:
 1. Commit and push all your code changes to your GitHub repository.
 2. Go to [Streamlit Community Cloud](https://share.streamlit.io/) and log in using your GitHub account.
 3. Click on the **New app** button.
-4. Select this repository (`CodeAlpha_Unemployment_Analysis_Dashboard`), branch (`main`), and set the main file path to `app.py`.
+4. Select this repository (`CodeAlpha_Unemployment_Analysis_Dashboard`), branch (`main`), and set the main file path to `streamlit_app.py` or `app.py`.
 5. Click **Deploy!** Your dashboard will be live in a few seconds.
+
 
 ### Method 2: Dockerized Deployment (Render, Railway, AWS, GCP, etc.)
 This repository includes a `Dockerfile` for easy containerization.
